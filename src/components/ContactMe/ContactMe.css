@@ -1,0 +1,75 @@
+/* General styling */
+.contact-container {
+    background-color: #121212; /* dark background */
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 20px;
+  }
+  
+  .input-field {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+  }
+  
+  .submit-btn {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #d1d1d1;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #f5f5f5;
+  }
+  
+  /* Individual icon colors */
+  .icon.facebook:hover {
+    color: #3b5998;
+  }
+  
+  .icon.twitter:hover {
+    color: #1da1f2;
+  }
+  
+  .icon.youtube:hover {
+    color: #ff0000;
+  }
+  
+  .icon.instagram:hover {
+    color: #c13584;
+  }
+  

@@ -1,0 +1,98 @@
+/* Sticky Navbar */
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 50px;
+}
+
+.navbar-toggler {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Centering the Nav Menu */
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 20px;
+}
+
+.navItem {
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.navButton {
+  margin-left: auto;
+}
+
+.navButton button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navButton button:hover {
+  background-color: #0056b3;
+}
+.active{
+  color:green !important;
+  border-bottom: 3px solid green;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navMenu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .navMenu.show {
+    display: flex;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-toggler {
+    display: none;
+  }
+}

@@ -1,0 +1,103 @@
+/* General styling for the client section */
+.clientSection {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .clientBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .col {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .clientTitle h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .clientDetails p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .clientImage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .clinetlogo {
+    flex: 1 1 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .clinetlogo img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .clinetlogo img:hover {
+    filter: grayscale(0%);
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .clientBody {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .clientTitle h3 {
+      font-size: 1.8rem;
+    }
+  
+    .clientDetails p {
+      font-size: 1rem;
+    }
+  
+    .clinetlogo {
+      flex-basis: 100px;
+    }
+  
+    .clinetlogo img {
+      width: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .clientTitle h3 {
+      font-size: 1.6rem;
+    }
+  
+    .clientDetails p {
+      font-size: 0.9rem;
+    }
+  
+    .clinetlogo img {
+      width: 60px;
+    }
+  }
+  
